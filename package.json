@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "lint": "eslint src/",
@@ -14,7 +14,9 @@
     "frontend:dev": "cd frontend && npm start",
     "docker:build": "docker-compose build",
     "docker:up": "docker-compose up",
-    "docker:down": "docker-compose down"
+    "docker:down": "docker-compose down",
+    "test:integration": "jest tests/integration",
+    "test:unit": "jest tests/unit"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,20 @@
+{
+    "validProduct": {
+      "id": "prod123",
+      "name": "Test Product",
+      "price": 99.99,
+      "description": "Test description"
+    },
+    "products": [
+      {
+        "id": "prod1",
+        "name": "Product 1",
+        "price": 19.99
+      },
+      {
+        "id": "prod2",
+        "name": "Product 2",
+        "price": 29.99
+      }
+    ]
+  }

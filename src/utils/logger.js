@@ -25,10 +25,6 @@ const logger = winston.createLogger({
 
 // Add console transport only in non-production environments
 if (process.env.NODE_ENV !== 'production') {
-  // Remove this duplicate console transport
-  // logger.add(new winston.transports.Console({
-  //   format: winston.format.simple()
-  // }));
   
   // Add single console transport with combined format
   logger.add(

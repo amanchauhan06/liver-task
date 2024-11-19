@@ -1,0 +1,19 @@
+{
+    "validUser": {
+      "id": "user123",
+      "email": "test@example.com",
+      "name": "Test User"
+    },
+    "users": [
+      {
+        "id": "user1",
+        "email": "user1@example.com",
+        "name": "User One"
+      },
+      {
+        "id": "user2",
+        "email": "user2@example.com",
+        "name": "User Two"
+      }
+    ]
+  }
