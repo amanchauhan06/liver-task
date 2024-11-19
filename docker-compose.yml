@@ -1,0 +1,14 @@
+   version: '3'
+   services:
+     app:
+       build: .
+       ports:
+         - "3000:3000"
+         - "6379:6379"
+       environment:
+         - NODE_ENV=development
+         - FIREBASE_PROJECT_ID=${FIREBASE_PROJECT_ID}
+         - FIREBASE_PRIVATE_KEY=${FIREBASE_PRIVATE_KEY}
+         - FIREBASE_CLIENT_EMAIL=${FIREBASE_CLIENT_EMAIL}
+       env_file:
+         - .env

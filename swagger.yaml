@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: Recently Viewed Products API
+  version: 1.0.0
+paths:
+  /api/v1/users/{userId}/recentlyViewed:
+    get:
+      summary: Get recently viewed products
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: List of recently viewed products
+  /api/v1/users/{userId}/productView:
+    post:
+      summary: Log a product view
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: Product view logged successfully
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
